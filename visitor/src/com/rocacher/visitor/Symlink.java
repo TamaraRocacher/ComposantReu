@@ -26,11 +26,11 @@ public class Symlink extends ElementStockage
         else return reference.size()  ;
     }
 
-    public void cat()
+    //public void cat()
     //affiche le symbole du lien puis l'adresse absoule de sa rfrence
-    {
-        System.out.println("ln -s "+reference.absoluteAdress()+" "+name) ;
-    }
+    //{
+    //    System.out.println("ln -s "+reference.absoluteAdress()+" "+name) ;
+    //}
 
     public void accept(Visitor v){
         v.visiteSymlnk(this);
